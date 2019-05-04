@@ -115,7 +115,7 @@
           });
 
           var infowindow = new daum.maps.InfoWindow({
-              content : positions[i].title + '<br><a href="http://map.daum.net/link/to/'+ positions[i].title + ',' + positions[i].latlng.getLat() +',' + positions[i].latlng.getLat() + '">길찾기</a>'
+              content : positions[i].title + '<br><a href="http://map.daum.net/link/to/'+ positions[i].title + ',' + positions[i].latlng.getLat() +',' + positions[i].latlng.getLng() + '">길찾기</a>'
           });
 
           daum.maps.event.addListener(marker, 'click', makeOverListener(map, marker, infowindow));
